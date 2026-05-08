@@ -1,0 +1,19 @@
+.container{
+    min-height: 500px;
+    border: 1px solid black;
+    display: flex;
+    gap: 30px;
+}
+#box1{
+    flex-shrink: 1;
+    align-self: self-end;
+}
+.box{
+    flex-shrink: 1;
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

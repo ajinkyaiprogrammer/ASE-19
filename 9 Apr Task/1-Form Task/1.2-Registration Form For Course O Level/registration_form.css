@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 2px;
+}
+td, th{
+    word-break: break-word;
+}
+table {
+    max-width: 1500px;
+    /* width: 100%; */
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+}
+.color-heading{
+    background-color: aqua;
+}
+#buttons{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+input,select{
+    max-width: 100px;
+    width: 100%;
+}

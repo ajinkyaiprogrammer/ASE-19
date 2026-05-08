@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3a393c;
+  background-size: cover;
+  background-position: center;
+}
+.card {
+  display: flex;
+  position: relative;
+  border-radius: 20px;
+  background:  #1c1924;
+  box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.5);
+  width: 80%;
+  box-sizing: border-box;
+  padding: 30px;
+}
+.login-hidden,
+.visible-hidden {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transition: 3s; */
+  border-radius: 20px;
+}
+.login {
+  visibility: visible;
+  opacity: 1;
+  transition: 2s;
+}
+.registration {
+  visibility: hidden;
+  opacity: 0;
+  transition: 2s;
+}
+.visible-hidden {
+  background-image: url(./assets/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  transition: 3s;
+}
+.visible-hidden:hover .registration {
+  visibility: visible;
+  opacity: 1;
+}
+.card:has(.visible-hidden:hover) .login {
+  visibility: hidden;
+  opacity: 0;
+}
+.card:has(.visible-hidden:hover) .login-hidden {
+  background-image: url(./assets/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.visible-hidden:hover {
+  background-image: none;
+}
+h2 {
+  font-size: 2em;
+  color: #fdfcfc;
+  text-align: center;
+}
+.input-box {
+  position: relative;
+  width: 100%;
+  margin: 30px 0;
+  border-bottom: 2px solid #fdfcfc;
+}
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  /* font-size: 1em; */
+  color: #fdfcfc;
+  pointer-events: none;
+  transition: 0.5s;
+}
+.input-box input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  /* font-size: 1em; */
+  color: #fdfcfc;
+  padding: 0 30px 0 5px;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -5px;
+}
+.input-box .icon {
+  position: absolute;
+  right: 8px;
+  color: #fdfcfc;
+  /* font-size: 1.2em; */
+  line-height: 57px;
+}
+.remember {
+  margin: -15px 0 15px;
+  font-size: 0.9em;
+  color: #fdfcfc;
+  display: flex;
+  justify-content: space-between;
+}
+.remember label input {
+  margin-right: 5px;
+}
+.remember a {
+  color: #fdfcfc;
+  text-decoration: none;
+  font-weight: 600;
+}
+.remember a:hover {
+  text-decoration: underline;
+}
+button {
+  width: 100%;
+  border-radius: 40px;
+  height: 40px;
+  background: #6E59B5;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  color: #fdfcfc;
+  font-weight: 600;
+}
+.register {
+  font-size: 0.9em;
+  color: #fdfcfc;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+.register p a {
+  text-decoration: none;
+  color: #fdfcfc;
+  font-weight: 600;
+}
+.register p a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    height: fit-content;
+  }
+  .login-hidden,
+  .visible-hidden {
+    width: 100%;
+  }
+}

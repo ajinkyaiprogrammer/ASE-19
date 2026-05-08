@@ -1,0 +1,62 @@
+body{
+    margin: auto;
+    padding: 0px;
+    width: 80%;
+    height: 100%;
+    background-color: aliceblue;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 10px;
+    background-color:   #D5E7F5;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    overflow-y: hidden;
+    background-color:   #FFFFFF;
+}
+.card{
+    max-width: 300px;
+    max-height: 450px;
+    border-radius: 10px;
+    text-align: center;
+}
+.image{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #F5F5F5;
+}
+img{
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+}
+.header{
+    display: grid;
+    grid-template-areas: 'div-1 div-2';
+    padding: 10px;
+}
+input{
+    width: 80%;
+    height: 40px; 
+    border-radius: 10px;
+    border: 1px solid #2FA1FF;
+}
+select{
+    max-width: 60px;
+    border: none;
+}
+div-2{
+    display: flex;
+    justify-content: right;
+}

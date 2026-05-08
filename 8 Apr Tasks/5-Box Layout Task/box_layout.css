@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    border: 1px solid green;
+}
+.container{
+    border: 1px solid black;
+    display: grid;
+    row-gap: 10px;
+    justify-content: center;
+}
+.content, .border{
+    width: 100px;
+    height: 100px;
+}
+.content{
+    box-sizing: content-box;
+    background-color: aqua;
+    border: 10px solid tomato;
+    padding: 10px;
+}
+.border{
+    box-sizing: border-box;
+    background-color: aqua;
+    border: 10px solid tomato;
+    padding: 10px;
+}

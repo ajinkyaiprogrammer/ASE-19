@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css?family=Manrope');
+@import url("https://fonts.googleapis.com/css?family=Sirin Stencil");
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 50px;
+    background-color: #FCF9F4;
+    font-family: "Manrope" sans-serif;
+    box-sizing: border-box;
+}
+
+/* header-section */
+.header{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    z-index: 1000;
+    width: 100%;
+    opacity: 0.9;
+    top: 0;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #FCF9F4;
+}
+.heading{
+    font-family: "Sirin Stencil", sans-serif;
+    color:  #A03F28;
+    font-size: 40px;
+}
+.book-now button{
+    border-radius: 10px;
+    width: 150px;
+    padding: 15px;
+    background-color: #A03F28;
+    border: none;
+    font-size: 15px;
+    color: #FCF9F4;
+    transition: 1s ease;
+}
+/* header-section */
+
+.wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* margin-top: 60px; */
+    gap: 40px;
+    box-sizing: inherit;
+}
+
+/* content-section */
+.content{
+    display: flex;
+    box-sizing: border-box;
+    width: 60%;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+}
+.info{
+    width: 40%;
+}
+#head-text{
+    font-size: 50px;
+    font-family: "Noto Serif", serif;
+}
+#head-text label{
+    color: #A03F28;
+    font-style: italic;
+}
+#normal-text{
+    color: #D9A066;
+    font-size: 20px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.buttons button{
+    border-radius: 10px;
+    background-color: #A03F28;
+    color: #FCF9F4;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 20px;
+    transition: 1s ease;
+}
+#view-button{
+    background-color: #EBE8E3;
+    color: black;
+}
+.image{
+    position: relative;
+    width: 40%;
+    /* border-radius: 20px; */
+}
+.image img{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+.image label{
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+    border-radius: 10px;
+    background-color: #849c83;
+    padding: 2px;
+}
+/* content-section */
+
+/* schedule-section */
+.schedule-info{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    background-color: #eeece8;
+    padding: 40px;
+    /* gap: 80px; */
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    padding-bottom: 80px;
+}
+.schedule{
+    display: grid;
+    box-sizing: border-box;
+    width: 60%;
+    justify-content: space-between; 
+    align-items: center;
+    min-height: 400px;
+    margin: auto;
+    gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+}
+.information{
+    background-color: #f5f2ed;
+    width: 100%;
+    max-width: 100%;
+    /* max-height: 100px; */
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    padding: 10px;
+    max-height: 200px;
+    transition: 1s ease;
+}
+.information:hover{
+    transform: scale(1.1);
+}
+.information i{
+    color: #A03F28;
+}
+.information label{
+    color: #848484;
+}
+.information b{
+    font-size: 20px;
+}
+.pillars{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: auto;
+    /* gap: 40px; */
+    justify-content: space-between;
+}
+.pillars-points{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: 1s ease;
+}
+.pillars-points i{
+    color: #849c83;
+}
+.work, .sauces, .dough{
+    display: flex;
+    gap: 10px;
+}
+.work i, .sauces i, .dough i{
+    float: left;
+    font-size: 40px;
+    margin-right: 10px;
+}
+/* schedule-section */
+
+/* chef-info-section */
+.chef-info{
+    display: flex; 
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: space-between;
+    /* grid-template-areas: 'chef-image chef-name'; */
+    width: 60%;
+    margin: auto;
+}
+.chef-image{
+    width: 30%;
+}
+.chef-image img{
+    width: 100%;
+    border-radius: 20px;
+}
+.chef-name{
+    width: 50%;
+    min-height: 500px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 20px;
+    background-color: #EBE8E3;
+}
+.chef-name label{
+    font-size: 30px;
+    color: #A03F28;
+}
+.chef-name i{
+    font-size: 20px;
+}
+.chef-name p{
+    font-size: 15px;
+}
+/* chef-info-section */
+
+/* advertise-section */
+.advertise{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 400px;
+    width: 100%;
+    font-size: 40px;
+    border-radius: 20px;
+    padding: 50px;
+    border: none;
+    outline: none;
+    background-color: #F6F3EE;
+}
+.advertise i{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+/* advertise-section */
+
+/* session-details-section */
+.session{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    min-height: 400px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: #A74B39;
+    padding: 5px;
+}
+.session h1{
+    font-size: 50px;
+    color: white;
+}
+.session p{
+    font-size: 20px;
+    color: white;
+}
+.session button{
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 30px;
+    width: 250px;
+    background-color: #F6F3EE;
+    color: #A03F28;
+    border: none;
+    outline: none;
+    transition: 1s ease;
+}
+.session label{
+    font-size: 15px;
+    color: #F6F3EE;
+}
+/* session-details-section */
+
+hr{
+   border: 1px solid #A03F28;
+}
+
+/* footer-section */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    align-items: center;
+    min-height: 250px;
+}
+.footer h2{
+    color: #A03F28;
+    font-style: italic;
+}
+.footer p{
+    color: #848484;
+}
+.redirect-buttons button{
+    border: none;
+    outline: none;
+    width: fit-content;
+    padding: 10px;
+    background: none;
+    transition: 1s ease;
+}
+/* footer-section */
+
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media (max-width:915px){
+    .header{
+    width: 100%;
+}
+    .heading{
+    font-size: 20px;
+}
+.book-now button{
+    max-width: 150px;
+    font-size: 15px;
+}
+    .schedule{
+        grid-template-columns: repeat(2,1fr);
+        min-width: 300px;
+}
+    #head-text,#normal-text{
+        text-align: center;
+    }
+    .image{
+        width: 100%;
+    }
+    .image img{
+        width: 100%;
+    }
+    .info{
+    width: 100%;
+}
+    #head-text{
+    font-size: 20px;
+}
+    .buttons{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .buttons button{
+    width: 100%;
+    font-size: 15px;
+}
+  .information{
+    width: 100%;
+    max-width: 100%;
+}
+    .pillars{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    gap: 50px;
+    justify-content: space-around;
+    text-align: justify;
+}
+     .chef-info{
+    display: grid; 
+    width: 80%;
+    grid-template-areas: "chef-image""chef-name";
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+    .chef-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    }
+    .chef-image img{
+    width: 100%;
+    border-radius: 20px;
+}
+    .chef-name{
+    width: 100%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+    .advertise{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100px;
+    width: 100%;
+    font-size: larger;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+}
+    .session button{
+    font-size: 15px;
+    padding: 20px;
+    width: 200px;
+}
+
+    .footer{
+        gap: 20px;
+    }
+    .redirect-buttons button{
+    width: max-content;
+    padding: 5px;
+
+}
+}

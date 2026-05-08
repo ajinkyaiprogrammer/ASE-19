@@ -1,0 +1,13 @@
+.test-name {
+    margin-top: 50px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.test-name, .text h4, #line-through {
+    text-align: center;
+}
+.text {
+    margin-left: 150px;
+    margin: auto;
+    width: 60%;
+}

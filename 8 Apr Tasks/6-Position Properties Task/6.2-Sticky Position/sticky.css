@@ -1,0 +1,13 @@
+h1,p{
+    font-size: 40pt;
+}
+img{
+    position: sticky;
+    top: 0px;
+    width: 300px;
+    height: auto;
+    background-color: antiquewhite;
+}
+p{
+    border: 1px solid red;
+}

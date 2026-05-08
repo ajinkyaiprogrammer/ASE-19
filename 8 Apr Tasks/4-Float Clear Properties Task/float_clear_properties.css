@@ -1,0 +1,11 @@
+img{
+    max-width: 300px;
+    height: auto;
+    float: left;
+    background-color: aqua;
+    margin: 10px;
+}
+p{
+    clear: left;
+    text-align: justify;
+}

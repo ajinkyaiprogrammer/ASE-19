@@ -1,0 +1,24 @@
+.container, .table-container{
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th {
+    text-align: center;
+}
+table {
+    max-width: 1500px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+h4{
+    text-align: center;
+}
+#title{
+    background-color: brown;
+}
+.text{
+    background-color: aqua;
+}

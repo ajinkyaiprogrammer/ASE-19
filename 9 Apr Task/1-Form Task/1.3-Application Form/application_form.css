@@ -1,0 +1,71 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.personal-details {
+  display: grid;
+  grid-template-areas: "content-A input-A content-B input-B";
+}
+/* .content-A{
+    grid-area: content-A;
+}
+.input-A{
+    grid-area: input-A;
+}
+.content-B{
+    grid-area: content-B;
+}
+.input-B{
+    grid-area: input-B;
+} */
+.contact-details {
+  display: grid;
+  grid-template-areas: "content-A input-A content-B input-B";
+}
+.qualification-details {
+  display: grid;
+  grid-template-areas: "sr-number qualification board-university passing-year max-marks marks-obtain percentage";
+}
+.language-knowledge {
+  display: grid;
+  grid-template-areas: "language reading writing spoken";
+}
+.identification-details {
+  display: grid;
+  grid-template-areas: "content-1 item-1 content-2 item-2";
+}
+.footer,
+h1 {
+  text-align: center;
+}
+input,select{
+    max-width: 50%;
+}
+@media (max-width: 768px) {
+  .personal-details {
+    display: grid;
+    grid-template-areas: 'content-A input-A' 
+                            'content-B input-B';
+  }
+  .contact-details {
+    display: grid;
+    grid-template-areas: "content-A input-A" 
+                            "content-B input-B";
+  }
+  .qualification-details {
+    display: grid;
+    grid-template-areas: "sr-number qualification" "board-university passing-year" "max-marks marks-obtain" "percentage .";
+  }
+  .language-knowledge {
+    display: grid;
+    grid-template-areas: "language reading writing spoken";
+  }
+  .identification-details {
+    display: grid;
+    grid-template-areas: "content-1 item-1" "content-2 item-2";
+  }
+}
