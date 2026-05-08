@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Date and Time</h1>
+    <button
+      type="button"
+      onclick="document.getElementById('demo').innerHTML = Date()"
+    >
+      click me
+    </button>
+    <p id="demo"></p>
+
+    <button
+      type="button"
+      onclick="
+        document.getElementById('innerH').innerHTML = '<h1>Heading tag</h1>'
+      "
+    >
+      innerHTML
+    </button>
+    <p id="innerH"></p>
+
+    <button
+      type="button"
+      onclick="
+        document.getElementById('innerT').innerText = '<h1>Heading tag</h1>'
+      "
+    >
+      innerText
+    </button>
+    <p id="innerT"></p>
+
+    <script>
+      document.write("hello");
+    </script>
+
+    <script>window.alert('JavaScript')</script>
+
+    <script>console.log('hello')</script>
+
+    
+  </body>
+</html>
